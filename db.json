@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "xxx",
+      "username": "Rakhi_Singh",
+      "email": "rakhi@singh.com",
+      "pass": "123456"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "title": "Apple iPhone 15",
+      "price": 999,
+      "description": "Latest Apple iPhone with advanced features.",
+      "category": "Electronics",
+      "image": "https://example.com/iphone15.jpg"
+    }
+  ]
+}
