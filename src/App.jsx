@@ -1,15 +1,15 @@
-import React,{ useEffect } from 'react'
+import React, { useEffect } from 'react'
 import axios from './api/axiosconfig'
-import {asyncgetusers} from './store/userAction'
+import Mainroutes from './routes/Mainroutes'
+import Nav from './components/Nav'
 
 const App = () => {
- 
-  useEffect(()=>{
-    asyncgetusers()
-    // getproduct();     //useEffect() controls when the code should run.what 
-  },[])
   return (
-    <div className='bg-blue-500'>App</div>
+    <div className='text-white front-thin w-screen h-screen bg-gray-800'>
+     <Nav/>
+      <Mainroutes/>
+    </div>
+
   )
 }
 
