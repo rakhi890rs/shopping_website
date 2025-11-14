@@ -1,15 +1,24 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
- import { asynccreateproduct } from '../../store/action/productAction' // replace with your actual action
+import { nanoid } from 'nanoid'
+import { useNavigate } from 'react-router-dom'
+import { asynccreateproduct } from '../../store/action/productAction'
 
 const CreateProduct = () => {
   const { register, handleSubmit, reset } = useForm()
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const createHandler = (product) => {
-    // dispatch(asyncCreateProduct(product))
-    reset()
+    product.id = nanoid();
+    product.price = Number(product.price); // convert price to number
+
+    console.log(product);
+
+    dispatch(asynccreateproduct(product));
+    reset();
+    navigate("/products");
   }
 
   return (

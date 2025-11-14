@@ -4,20 +4,77 @@
       "id": "xxx",
       "username": "Rakhi_Singh",
       "email": "rakhi@singh.com",
-      "pass": "123456"
+      "pass": "123456",
+      "isAdmin": true
+    },
+    {
+      "id": "U2N_Hg6vPzMqPJKBTIZNi",
+      "username": "12303352@neocolab.ai",
+      "email": "12303352@neocolab.ai",
+      "password": "",
+      "confirmPassword": "bjbuj"
+    },
+    {
+      "id": "u0BEwV-DdK7EMYqfq-6r0",
+      "username": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": ""
+    },
+    {
+      "id": "CJKk0KlIkvbY6Fvq4TGtc",
+      "username": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": ""
+    },
+    {
+      "id": "BZKp3T0B8tWIi4bj2GPBp",
+      "username": "",
+      "email": "",
+      "password": "",
+      "confirmPassword": ""
+    },
+    {
+      "id": "0zST2kcEJNMmVxlvnPzlb",
+      "username": "12303352@neocolab.ai",
+      "email": "12303352@neocolab.ai",
+      "password": "bjbuj",
+      "confirmPassword": "bjbuj"
+    },
+    {
+      "id": "LVsL32hCAAqhJkY-EWTT9",
+      "username": "12303352@neocolab.ai",
+      "email": "12303352@neocolab.ai",
+      "password": "bjbuj",
+      "confirmPassword": "bjbuj"
     }
   ],
   "product": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Apple iPhone 15",
       "price": 999,
       "description": "Latest Apple iPhone with advanced features.",
       "category": "Electronics",
       "image": "https://example.com/iphone15.jpg"
+    },
+    {
+      "id": "yqZHOhsIHY1riKj0Edy4g",
+      "name": "Rakhi Singh",
+      "description": "dcf",
+      "price": 1,
+      "category": "3e",
+      "image": "https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
+    },
+    {
+      "id": "-NsrnrHoM1E-2fnP9B7_T",
+      "name": "Rakhi Singh",
+      "description": "dcf",
+      "price": 1,
+      "category": "3e",
+      "image": "https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
     }
   ],
-  "cart":[
-    
-  ]
+  "carts": []
 }

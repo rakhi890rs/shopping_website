@@ -2,13 +2,16 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+import { asyncloginuser } from '../store/action/userAction'
 
 const Login = () => {
   const { register, reset, handleSubmit } = useForm()
-
+  const dispatch=useDispatch();
   const loginhandler = (user) => {
     // user.id = nanoid()
     console.log(user)
+    dispatch(asyncloginuser(user));
     reset()
   }
 
@@ -31,7 +34,7 @@ const Login = () => {
         placeholder='password'
       />
 
-      <button type="submit">Login user</button>
+      <button className='mt-5 px-4 bg-blue-400 rounded' type="submit">Login user</button>
 
       <p className='mt-3'>
         Don't have an account? <Link to="/register" className='text-blue-500 underline'>Register</Link>
