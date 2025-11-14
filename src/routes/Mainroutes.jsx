@@ -1,11 +1,10 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from "../pages/Home";
-import Products from "../pages/Products";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import CreateProduct from "../pages/product/CreateProduct"; // ✅ add this
-import UpdateProduct from "../pages/product/UpdateProduct"; // ✅ add this
+import Home from "../pages/Home.jsx";
+import Products from "../pages/Products.jsx";
+import Login from "../pages/Login.jsx";
+import Register from "../pages/Register.jsx";
+import CreateProduct from "../pages/product/CreateProduct.jsx";
+import UpdateProduct from "../pages/product/UpdateProduct.jsx";
+
 
 const Mainroutes = () => {
   return (
