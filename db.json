@@ -48,48 +48,28 @@
       "email": "12303352@neocolab.ai",
       "password": "bjbuj",
       "confirmPassword": "bjbuj"
+    },
+    {
+      "id": "PL5uuR-XfGZ_zieY2DXNd",
+      "username": "pranali",
+      "email": "shirkepranali26@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234"
+    },
+    {
+      "username": "shewta",
+      "email": "shewta123@gmail.com",
+      "id": "JT8UJCQW1X8C7R9iTQ78C"
     }
   ],
   "product": [
     {
-      "id": "1",
-      "title": "Apple iPhone 15",
-      "price": 999,
-      "description": "Latest Apple iPhone with advanced features.",
+      "id": "uyF3Uuw2E5sHc1_I0gU-d",
+      "name": "iphone 15",
+      "description": "mobile",
+      "price": 123000,
       "category": "Electronics",
-      "image": "https://example.com/iphone15.jpg"
-    },
-    {
-      "id": "yqZHOhsIHY1riKj0Edy4g",
-      "name": "Rakhi Singh",
-      "description": "dcf",
-      "price": 1,
-      "category": "3e",
-      "image": "https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
-    },
-    {
-      "id": "-NsrnrHoM1E-2fnP9B7_T",
-      "name": "Rakhi Singh",
-      "description": "dcf",
-      "price": 1,
-      "category": "3e",
-      "image": "https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
-    },
-    {
-      "id": "ti5IA-HYLcsPUZAAIi8xc",
-      "name": "",
-      "description": "",
-      "price": 0,
-      "category": "",
-      "image": ""
-    },
-    {
-      "id": "eniHlGikgfV7r4iUb2PMB",
-      "name": "",
-      "description": "",
-      "price": 0,
-      "category": "",
-      "image": ""
+      "image": "https://www.apple.com/euro/iphone/compare/c/screens_alt/images/meta/compare__0kr7oqqwknma_og.png?202502181221"
     }
   ],
   "carts": []

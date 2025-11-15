@@ -9,6 +9,7 @@ import Register from "../pages/Register.jsx";
 import ProductDetails from "../pages/product/productDetails.jsx";
 import CreateProduct from "../pages/product/CreateProduct.jsx";
 import UpdateProduct from "../pages/product/UpdateProduct.jsx";
+import ProfileUser from "../pages/users/ProfileUser.jsx"
 
 const Mainroutes = () => {
   return (
@@ -19,7 +20,11 @@ const Mainroutes = () => {
       <Route path="/register" element={<Register />} />
 
       <Route path="/admin/create-product" element={<CreateProduct />} />
+      <Route path="/admin/user-profile" element={<ProfileUser />} />
+
       <Route path="/ProductDetail/:id" element={<ProductDetails />} />   {/* FIXED */}
+      <Route path="/admin/update-product/:id" element={<UpdateProduct />} />
+
     </Routes>
   );
 };

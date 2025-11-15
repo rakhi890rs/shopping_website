@@ -1,21 +1,31 @@
-import { createSlice } from '@reduxjs/toolkit'
+// src/store/reducers/cartSlice.js
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   carts: [],
-}
+};
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
     loadCart: (state, action) => {
-      state.carts = action.payload
+      state.carts = action.payload;
+    },
+    addToCart: (state, action) => {
+      state.carts.push(action.payload);
+    },
+    removeFromCart: (state, action) => {
+      state.carts = state.carts.filter(item => item.id !== action.payload);
+    },
+    clearCart: (state) => {
+      state.carts = [];
     },
   },
-})
+});
 
-export const { loadCart } = cartSlice.actions
-export default cartSlice.reducer
+// ✅ Export all actions
+export const { loadCart, addToCart, removeFromCart, clearCart } = cartSlice.actions;
 
-
-// Redux slices don’t use any JSX (no HTML or React components inside them).
+// ✅ Export reducer
+export default cartSlice.reducer;

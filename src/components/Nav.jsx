@@ -22,13 +22,14 @@ const Nav = () => {
       {user?.id && (
         <>
           <NavLink to="/admin/create-product">Create Product</NavLink>
-          <span className="ml-3">{user.username}</span>
-          <button
+          <NavLink to="/admin/user-profile">Settings</NavLink>
+          {/* <span className="ml-3">{user.username}</span> */}
+          {/* <button
             onClick={handleLogout}
             className="ml-3 px-2 bg-red-400 rounded"
           >
             Logout
-          </button>
+          </button> */}
         </>
       )}
     </nav>
