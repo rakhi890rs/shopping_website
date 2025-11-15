@@ -6,7 +6,7 @@ import Products from "../pages/products.jsx"
 import Login from "../pages/Login.jsx";
 import Register from "../pages/Register.jsx";
 
-import ProductDetails from "../pages/product/productDetails.jsx";
+import ProductDetails from "../pages/product/ProductDetails.jsx";
 import CreateProduct from "../pages/product/CreateProduct.jsx";
 import UpdateProduct from "../pages/product/UpdateProduct.jsx";
 import ProfileUser from "../pages/users/ProfileUser.jsx"
@@ -30,3 +30,6 @@ const Mainroutes = () => {
 };
 
 export default Mainroutes;
+
+
+// history
