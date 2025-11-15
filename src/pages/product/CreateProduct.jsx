@@ -18,7 +18,7 @@ const CreateProduct = () => {
 
     dispatch(asynccreateproduct(product));
     reset();
-    navigate("/products");
+    navigate("/Products");
   }
 
   return (

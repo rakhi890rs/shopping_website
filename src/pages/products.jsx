@@ -1,26 +1,51 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import axios from '../api/axiosconfig'
+import { Link } from 'react-router-dom'
 
-import Home from "../pages/Home.jsx";
-import Products from "../pages/Products.jsx";
-import Login from "../pages/Login.jsx";
-import Register from "../pages/Register.jsx";
+const Products = () => {
+  const [products, setProducts] = useState([])
 
-import CreateProduct from "../pages/product/CreateProduct.jsx";
-import UpdateProduct from "../pages/product/UpdateProduct.jsx";
+  const getProducts = async () => {
+    try {
+      const res = await axios.get("/product")
+      setProducts(res.data)
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
-const Mainroutes = () => {
+  useEffect(() => {
+    getProducts()
+  }, [])
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+    <div className='grid grid-cols-3 gap-6 p-10'>
+      {products.map((item) => (
+        <div key={item.id} className='p-4 border rounded shadow-sm'>
 
-      <Route path="/admin/create-product" element={<CreateProduct />} />
-      <Route path="/admin/update-product/:id" element={<UpdateProduct />} />
-    </Routes>
-  );
-};
+          <img 
+            src={item.image}
+            alt={item.name}
+            className='w-full h-40 object-cover rounded'
+          />
 
-export default Mainroutes;
+          <h2 className='text-xl font-semibold mt-3'>{item.name}</h2>
+          <p className='text-gray-600'>{item.description}</p>
+          <p className='text-lg font-bold mt-2'>₹{item.price}</p>
+          <p className='text-sm text-blue-600 mt-1'>{item.category}</p>
+
+          {/* More Info Button */}
+          <Link
+            to={`/ProductDetail/${item.id}`}
+            className='text-blue-500 underline mt-3 inline-block'
+          >
+            More Info
+          </Link>
+
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export default Products

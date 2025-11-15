@@ -74,6 +74,22 @@
       "price": 1,
       "category": "3e",
       "image": "https://www.godubrovnik.com/wp-content/uploads/pizza.jpg"
+    },
+    {
+      "id": "ti5IA-HYLcsPUZAAIi8xc",
+      "name": "",
+      "description": "",
+      "price": 0,
+      "category": "",
+      "image": ""
+    },
+    {
+      "id": "eniHlGikgfV7r4iUb2PMB",
+      "name": "",
+      "description": "",
+      "price": 0,
+      "category": "",
+      "image": ""
     }
   ],
   "carts": []
